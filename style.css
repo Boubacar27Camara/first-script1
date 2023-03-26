@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@100&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    text-align: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+}
+nav {
+    padding-top: 10px;
+    display: none;
+}
+nav > ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px; /* entre les diff ligne*/
+}
+.nav-btn{
+    background: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 0  1px rgba(0, 0, 0, 0.5);
+    scale: 1.1;
+}
+.nav-btn:hover{ /*survol de l'element*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+footer{
+    margin: 10px;
+}
+#home_img{
+    width:90%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
+}
+#home_text{
+    margin: 10px 25px 25px 25px;
+    font-size: larger;
+    text-align: justify;
+}
+@media screen and (min-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    #home_img{
+        width: 40%;
+        margin: 20px 10px;
+    }
+    #home_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+    }
+
+}
+/* LOGIN PAGE */
+h2 {
+    margin: 30px;
+}
+input {
+    margin-top: 2px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* COLLECTION PAGE */
+#collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    width: 150px;
+    padding: 20px;
+    transition: background-color 0.2s;                
+    cursor: pointer;
+}
+.item:hover{
+    background-color: rgb(236, 232, 232);
+}
+.item > img{
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+} 

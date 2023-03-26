@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="btn-nav" class="nav-btn">+</button>
+        <h1><a href="./index.html">POULET-ZONE</a></h1>
+        <button class="nav-btn"><a href="./login.html">#</a></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./chicken.html">Acheter un poulet</a></li>
+            <li><a href="./login.html">Se connecter</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img id="home_img" src="./assets/poulet.jpg" alt="poulet">
+        <p id="home_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Atque explicabo, eveniet dolor reiciendis odio quas debitis at molestiae.
+              Laudantium perferendis ducimus quia culpa quas ipsum sint iste
+               atque in necessitatibus. Id, quidem necessitatibus neque 
+               cupiditate tempora harum dignissimos a perferendis at. Nisi 
+               ut molestias eius, dolor consectetur doloremque vel soluta?</p>
+    </main>
+    <footer>8#169; POULET</footer>
+    <script>
+        const btn = document.getElementById("btn-nav");
+        const nav = document.getElementsByTagName("nav")[0];
+        nav.style.display = "none";
+        btn.onclick = () => {
+            nav.style.display = (nav.style.display == "none") ?"block" : "none";
+            btn.innerText = (nav.style.display == "none") ? "+" : "-";
+        }
+    </script>
+</body>
+</html>

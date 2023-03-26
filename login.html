@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poulet-zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="btn-nav" class="nav-btn">+</button>
+        <h1><a href="./index.html">POULET-ZONE</a></h1>
+        <button class="nav-btn"><a href="./login.html">#</a></button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./chicken.html">Acheter un poulet</a></li>
+            <li><a href="./login.html">Se connecter</a></li>
+        </ul>
+    </nav>
+    <h2>SE CONNECTER</h2>
+    <form>
+        <label for="firstname">PRENOM</label><br>
+        <input name="firstname" type="text" placeholder="nom"><br>
+        <label for="lastname" >NOM</label><br>
+        <input name="lastname" type="text" placeholder="prenom"><br>
+        <label for="age">AGE</label><br>
+        <input name="age" type="number" placeholder="age"><br>
+        <label for="email">EMAIL</label><br>
+        <input name="email" type="email" placeholder="adresse email"><br>
+        <label for="password">MOT DE PASSE</label><br>
+        <input name="password" type="password" placeholder="mot de passe"><br>
+        <input type="submit" value="VALIDER">
+    </form>
+    <script>
+        const btn = document.getElementById("btn-nav");
+        const nav = document.getElementsByTagName("nav")[0];
+        nav.style.display = "none";
+        btn.onclick = () => {
+            nav.style.display = (nav.style.display == "none") ?"block" : "none";
+            btn.innerText = (nav.style.display == "none") ? "+" : "-";
+        }
+    </script>
+</body>
+</html>
